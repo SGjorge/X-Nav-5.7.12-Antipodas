@@ -10,16 +10,13 @@
  		</style>
  	</head>
 	<body>
-        	<p id='map'></p>
-  	        <script type="text/javascript" charset="utf-8">
-            function initMap(){
-                var mapDiv = document.getElementById("map");
-				var map = new google.maps.Map(mapDiv, {
-					center: {lat: 40.283743650362996, lng: -3.8191530513763428},
-					zoom: 15
-				});
- 			}
- 		</script>
-		<script src = "https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+       	<p> Location</p>
+
+    	<p><button onclick="geoFindMe()">Show my location</button></p>
+
+		<div id="out"></div>
+		<div id="out2"></div>
+
+    	<script src="map.js"></script>
 	</body>
 </html>
